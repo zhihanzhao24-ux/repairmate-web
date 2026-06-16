@@ -675,6 +675,7 @@ function applyStaticLanguage() {
     acceptNode(node) {
       const parent = node.parentElement;
       if (!parent || ["SCRIPT", "STYLE"].includes(parent.tagName)) return NodeFilter.FILTER_REJECT;
+      if (parent.closest(".notranslate, [translate='no']")) return NodeFilter.FILTER_REJECT;
       return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     }
   });
