@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepairMate 图文解答</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RepairMate</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="guide.html">图文解答</a>
+          <a href="agent.html">AI 实景</a>
+          <a href="call.html">实时呼叫</a>
+          <a href="profile.html">用户资料</a>
+          <a href="payment.html">支付</a>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang="zh">繁</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">图文解答</p>
+          <h2>选择一个常见问题</h2>
+        </div>
+        <a class="btn secondary" href="agent.html">用 AI 看现场</a>
+      </div>
+      <div class="tabs" aria-label="故障分类">
+        <button class="tab" data-topic-tab="washer">洗衣机不排水</button>
+        <button class="tab" data-topic-tab="aircon">空调滴水</button>
+        <button class="tab" data-topic-tab="faucet">水龙头漏水</button>
+        <button class="tab" data-topic-tab="socket">插座无电</button>
+      </div>
+      <div data-guide-root></div>
+    </main>
+    <footer class="footer">
+      <div class="container">所有维修建议均以安全为先。注册电工、水务认证等合规要求可在正式版接入审核资料。</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepairMate 实时呼叫维修</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RepairMate</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="guide.html">图文解答</a>
+          <a href="agent.html">AI 实景</a>
+          <a href="call.html">实时呼叫</a>
+          <a href="profile.html">用户资料</a>
+          <a href="payment.html">支付</a>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang="zh">繁</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">实时呼叫维修</p>
+          <h2>提交问题，模拟匹配附近持牌师傅</h2>
+        </div>
+        <a class="btn secondary" href="payment.html">先开通会员</a>
+      </div>
+
+      <div class="grid-2">
+        <section class="card">
+          <form class="form" data-call-form>
+            <div class="field">
+              <label for="repairIssue">维修问题</label>
+              <input id="repairIssue" name="issue" required placeholder="例如：厨房水龙头漏水">
+            </div>
+            <div class="field">
+              <label for="repairDistrict">所在地区</label>
+              <select id="repairDistrict" name="district">
+                <option>九龙城</option>
+                <option>观塘</option>
+                <option>沙田</option>
+                <option>荃湾</option>
+                <option>中西区</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="repairUrgency">紧急程度</label>
+              <select id="repairUrgency" name="urgency">
+                <option>今天内处理</option>
+                <option>2 小时内</option>
+                <option>预约明天</option>
+                <option>只想先报价</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="repairNote">补充说明</label>
+              <textarea id="repairNote" name="note" placeholder="描述现场情况、是否已断电/关水阀、是否方便上门。"></textarea>
+            </div>
+            <button class="btn brick full" type="submit">生成维修请求</button>
+          </form>
+        </section>
+
+        <section class="card repair-map">
+          <div class="map-canvas" aria-label="模拟地图">
+            <iframe
+              title="香港维修服务地图"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=114.1290%2C22.2940%2C114.2050%2C22.3420&layer=mapnik&marker=22.3193%2C114.1694"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <aside class="queue-panel">
+            <h3>附近师傅</h3>
+            <div class="tech-list">
+              <div class="tech"><strong>陈志明师傅</strong><p class="muted">注册电工 / 约 18 分钟 / 评分 4.9</p></div>
+              <div class="tech"><strong>黄伟强师傅</strong><p class="muted">水务维修 / 约 25 分钟 / 评分 4.8</p></div>
+              <div class="tech"><strong>李家豪师傅</strong><p class="muted">家电维修 / 约 32 分钟 / 评分 4.7</p></div>
+            </div>
+          </aside>
+        </section>
+      </div>
+
+      <section class="grid-3 section">
+        <article class="card">
+          <h3>透明报价</h3>
+          <p class="muted">用户确认报价后才派单，平台抽成可按企划书设为 15%-20%。</p>
+        </article>
+        <article class="card">
+          <h3>资质准入</h3>
+          <p class="muted">正式版可上传 EMSD 注册电工、水务认证与维修保险资料。</p>
+        </article>
+        <article class="card">
+          <h3>售后担保</h3>
+          <p class="muted">完成后可开启评价、维修记录和担保期追踪。</p>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

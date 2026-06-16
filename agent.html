@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepairMate AI 实景解答</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RepairMate</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="guide.html">图文解答</a>
+          <a href="agent.html">AI 实景</a>
+          <a href="call.html">实时呼叫</a>
+          <a href="profile.html">用户资料</a>
+          <a href="payment.html">支付</a>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang="zh">繁</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">AI + AR 实景解答</p>
+          <h2>拍下现场，让 Agent 给出安全排查建议</h2>
+        </div>
+        <a class="btn secondary" href="call.html">改为呼叫维修</a>
+      </div>
+
+      <div class="grid-2">
+        <section class="card">
+          <form class="form" data-agent-form>
+            <div class="field">
+              <label for="sceneType">维修场景</label>
+              <select id="sceneType">
+                <option>家电故障</option>
+                <option>水务漏水</option>
+                <option>电力安全</option>
+                <option>其他家庭维修</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="faultText">问题描述</label>
+              <textarea id="faultText" required placeholder="例如：洗衣机不排水，底部有积水，想知道是否能自己处理。"></textarea>
+            </div>
+            <div class="field">
+              <label for="imageUpload">现场照片</label>
+              <input id="imageUpload" type="file" accept="image/jpeg,image/png,image/webp,image/gif,image/*">
+              <div class="status compact-status" data-upload-status>尚未上传照片。</div>
+            </div>
+            <div class="button-row">
+              <button class="btn secondary" type="button" data-start-camera>打开摄像头</button>
+              <button class="btn teal" type="submit">调用 Agent</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="card">
+          <div class="agent-stage">
+            <p data-empty-stage>上传照片或打开摄像头后显示实景画面</p>
+            <video id="cameraPreview" autoplay playsinline muted></video>
+            <img id="imagePreview" alt="现场预览">
+            <div class="ar-overlay">
+              <div class="ar-line"></div>
+              <div class="ar-label">AR 标注层：正式版可接 ARKit / ARCore 或 WebAR 标注维修点</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="card" style="margin-top:16px">
+        <h3>Agent 回答</h3>
+        <div class="status answer-box" data-agent-answer>等待调用。当前为演示模式，后期接入 Agent 后会返回实时分析结果。</div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

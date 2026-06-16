@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepairMate 支付入口</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RepairMate</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="guide.html">图文解答</a>
+          <a href="agent.html">AI 实景</a>
+          <a href="call.html">实时呼叫</a>
+          <a href="profile.html">用户资料</a>
+          <a href="payment.html">支付</a>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang="zh">繁</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">支付入口</p>
+          <h2>会员订阅与维修订单支付</h2>
+        </div>
+        <a class="btn secondary" href="profile.html">返回资料</a>
+      </div>
+
+      <section class="grid-3">
+        <article class="card plan-card">
+          <p class="eyebrow">基础版</p>
+          <h3>免费排查</h3>
+          <p class="price">HK$0</p>
+          <p class="muted">基础图文指引、维修安全判断、师傅呼叫入口。</p>
+          <button class="btn secondary full" data-pay-plan="free" data-amount="0">启用基础版</button>
+        </article>
+        <article class="card plan-card">
+          <p class="eyebrow">VIP 月费</p>
+          <h3>完整 AI + AR</h3>
+          <p class="price">HK$28</p>
+          <p class="muted">解锁更多 Agent 次数、AR 实景标注和维修记录云端同步。</p>
+          <button class="btn teal full" data-pay-plan="vip-monthly" data-amount="28">支付月费</button>
+        </article>
+        <article class="card plan-card">
+          <p class="eyebrow">VIP 年费</p>
+          <h3>家庭常备</h3>
+          <p class="price">HK$268</p>
+          <p class="muted">适合老旧住宅或多设备家庭，含年度维修档案与优先匹配。</p>
+          <button class="btn amber full" data-pay-plan="vip-yearly" data-amount="268">支付年费</button>
+        </article>
+      </section>
+
+      <section class="grid-2 section">
+        <article class="card">
+          <h3>维修订单支付</h3>
+          <p class="muted">师傅上门订单可在确认报价后进入支付。正式版应记录报价单、平台佣金、发票与售后担保。</p>
+          <button class="btn brick" data-pay-plan="repair-order-demo" data-amount="480">模拟支付 HK$480</button>
+        </article>
+        <article class="card">
+          <h3>可接支付方式</h3>
+          <div class="pay-methods" aria-label="支付方式展示">
+            <button class="pay-method" type="button">
+              <span class="pay-mark stripe">S</span>
+              <span>Stripe</span>
+            </button>
+            <button class="pay-method" type="button">
+              <span class="pay-mark payme">P</span>
+              <span>PayMe</span>
+            </button>
+            <button class="pay-method" type="button">
+              <span class="pay-mark fps">F</span>
+              <span>FPS 转数快</span>
+            </button>
+            <button class="pay-method" type="button">
+              <span class="pay-mark qr">QR</span>
+              <span>收款码</span>
+            </button>
+            <button class="pay-method" type="button">
+              <span class="pay-mark mini">小</span>
+              <span>小程序支付</span>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

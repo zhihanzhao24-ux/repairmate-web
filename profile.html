@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepairMate 用户资料</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RepairMate</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="guide.html">图文解答</a>
+          <a href="agent.html">AI 实景</a>
+          <a href="call.html">实时呼叫</a>
+          <a href="profile.html">用户资料</a>
+          <a href="payment.html">支付</a>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang="zh">繁</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">用户资料云端储存</p>
+          <h2>保存住址、偏好与会员资料</h2>
+        </div>
+        <a class="btn secondary" href="payment.html">管理支付</a>
+      </div>
+
+      <div class="profile-layout">
+        <section class="card">
+          <form class="form" data-profile-form>
+            <div class="grid-2">
+              <div class="field">
+                <label for="name">姓名</label>
+                <input id="name" name="name" placeholder="例如：Chan Tai Man">
+              </div>
+              <div class="field">
+                <label for="phone">电话</label>
+                <input id="phone" name="phone" placeholder="+852 9123 4567">
+              </div>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="district">地区</label>
+                <input id="district" name="district" placeholder="例如：沙田">
+              </div>
+              <div class="field">
+                <label for="homeType">住宅类型</label>
+                <select id="homeType" name="homeType">
+                  <option value="">请选择</option>
+                  <option>私人住宅</option>
+                  <option>居屋</option>
+                  <option>公屋</option>
+                  <option>唐楼</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="address">地址</label>
+              <textarea id="address" name="address" placeholder="只在正式云端环境中保存详细地址。"></textarea>
+            </div>
+            <div class="field">
+              <label for="memberPlan">会员状态</label>
+              <select id="memberPlan" name="memberPlan">
+                <option>免费基础版</option>
+                <option>VIP 月费 28HKD</option>
+                <option>VIP 年费 268HKD</option>
+              </select>
+            </div>
+            <div class="button-row">
+              <button class="btn teal" type="submit">保存资料</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
