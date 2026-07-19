@@ -143,6 +143,7 @@ const RM_LANGUAGE = {
       "选择一个常见问题": "選擇一個常見問題",
       "用 AI 看现场": "用 AI 查看現場",
       "洗衣机不排水": "洗衣機不排水",
+      "用锤子钉钉子": "用錘子釘釘子",
       "空调滴水": "冷氣機滴水",
       "水龙头漏水": "水龍頭漏水",
       "插座无电": "插座無電",
@@ -340,6 +341,7 @@ const RM_LANGUAGE = {
       "选择一个常见问题": "Choose a Common Issue",
       "用 AI 看现场": "Use AI on Scene",
       "洗衣机不排水": "Washer Not Draining",
+      "用锤子钉钉子": "Hammering a Nail",
       "空调滴水": "AC Water Dripping",
       "水龙头漏水": "Leaking Tap",
       "插座无电": "Socket Has No Power",
@@ -493,6 +495,66 @@ const RM_LANGUAGE = {
 };
 
 RM_LANGUAGE.zh.guides = {
+  part1: {
+    title: "用錘子釘釘子",
+    category: "Part 1",
+    risk: "基礎入門",
+    image: "assets/word-part1/part1-01.jpg",
+    heroImage: "assets/word-part1/part1-01.jpg",
+    intro: "實現獨立的第一步。無論是在牆上掛鐘、相框、擱板、衣架，還是固定搖晃的椅子腿，都可能用到錘子和釘子。這一節先用把釘子釘進木頭的方法講清楚基本原理。",
+    symptoms: ["想掛相框、時鐘或衣架", "木件或椅子腿鬆動", "需要固定小型擱板", "想先學會最基礎的手作維修"],
+    tools: ["錘子", "釘子", "手套", "老虎鉗"],
+    steps: [
+      { title: "先戴手套", body: "為安全起見，作業前先戴好手套。新手容易因為釘子滑動或錘擊偏移而碰傷手。", tip: "如果不放心，可用老虎鉗夾住釘身。" },
+      { title: "固定釘子位置", body: "用沒有握錘子的另一隻手抓住釘身，把釘子放在要固定的位置。先輕敲幾下，讓釘尖進入木材。", tip: "一開始不要用太大力。" },
+      { title: "握住錘柄下半部", body: "握住手柄尾部力量更大，但容易脫手。新手建議握住手柄下半部分，更容易控制方向。", tip: "錘面要盡量垂直打在釘頭上。" },
+      { title: "控制節奏敲入", body: "抓住錘柄，放鬆肩膀，按強弱強弱的節奏敲打。若用力過猛，可能讓木頭裂開、釘子打歪或傷到手。", tip: "薄木板可先用鑽子鑽小孔再釘。" }
+    ],
+    warnings: ["木板太薄容易裂開", "釘子打歪或反覆彎曲", "要固定重物或承重擱板", "需要在混凝土牆或石膏板牆上固定"],
+    cta: "如果要固定承重物件或不確定牆面材質，建議先呼叫維修或請專業師傅判斷。",
+    sourceSections: [
+      {
+        title: "準備資訊",
+        type: "facts",
+        items: ["準備工具：錘子、釘子、手套，可加老虎鉗", "難度：1 級", "參考材料費：約 1000 韓元", "注意事項：不是越用力越好，重點是控制力量和方向"]
+      },
+      {
+        title: "Step 1：安全與定位",
+        image: "assets/word-part1/part1-02.jpg",
+        body: "先戴手套，再把釘子放到要固定的位置。若擔心錘子傷到手，可以用老虎鉗固定釘身，讓手遠離錘擊點。"
+      },
+      {
+        title: "Step 2：開始錘擊",
+        image: "assets/word-part1/part1-03.jpg",
+        body: "先輕敲讓釘子立穩，再逐步加力。錘擊時保持錘面正對釘頭，避免釘子彎曲或打斜。"
+      },
+      {
+        title: "活學活用：釘子與螺絲釘",
+        image: "assets/word-part1/part1-04.jpg",
+        body: "釘子通常與錘子配合使用，釘身沒有螺紋；螺絲釘需要螺絲刀或電鑽旋入，釘身有旋槽，固定力更穩。"
+      },
+      {
+        title: "螺絲釘類型",
+        image: "assets/word-part1/part1-05.jpg",
+        body: "螺絲釘可按螺絲頭形狀、材料用途區分。普通家庭維修中，新手不必一開始就分得太細，先選常見尺寸即可。"
+      },
+      {
+        title: "在混凝土牆上固定",
+        image: "assets/word-part1/part1-06.jpg",
+        body: "混凝土牆不建議直接用錘子硬釘。更穩妥的方法是先用電鑽打孔，塞入塑料膨脹管，再拧入螺絲釘。"
+      },
+      {
+        title: "鑽頭與牆面",
+        image: "assets/word-part1/part1-07.jpg",
+        body: "鑽頭分木材用、混凝土用、鋼材用。混凝土牆需要配合混凝土鑽頭，並讓鑽頭與牆面保持垂直。"
+      },
+      {
+        title: "深度標記",
+        image: "assets/word-part1/part1-09.jpg",
+        body: "打孔深度應與膨脹管長度一致。可以先用膠帶在鑽頭上標記膨脹管長度，鑽到標記位置即可停止。"
+      }
+    ]
+  },
   washer: {
     title: "洗衣機不排水",
     category: "家電",
@@ -564,6 +626,34 @@ RM_LANGUAGE.zh.guides = {
 };
 
 RM_LANGUAGE.en.guides = {
+  part1: {
+    title: "Hammering a Nail",
+    category: "Part 1",
+    risk: "Beginner basics",
+    image: "assets/word-part1/part1-01.jpg",
+    heroImage: "assets/word-part1/part1-01.jpg",
+    intro: "The first step toward independent home repair. Whether you want to hang a clock, frame, shelf, coat hook, or tighten a shaky chair leg, learning how to use a hammer and nail is a useful foundation.",
+    symptoms: ["Hang a frame, clock, or hook", "Fix loose wooden parts", "Secure a small shelf", "Learn basic hands-on repair"],
+    tools: ["Hammer", "Nails", "Gloves", "Pliers"],
+    steps: [
+      { title: "Wear gloves first", body: "Put on gloves before starting. Beginners can easily hurt their hands if the nail slips or the hammer lands off target.", tip: "Use pliers to hold the nail if needed." },
+      { title: "Set the nail position", body: "Hold the nail with the hand not holding the hammer. Place it at the target point and tap lightly until the tip enters the wood.", tip: "Do not start with full force." },
+      { title: "Grip the lower handle", body: "Holding the end of the handle gives more force but is harder to control. Beginners should grip the lower half for better direction.", tip: "Keep the hammer face square to the nail head." },
+      { title: "Hammer with rhythm", body: "Relax your shoulder and strike with a controlled strong-light rhythm. Too much force can split the wood, bend the nail, or hurt your hand.", tip: "For thin boards, drill a small pilot hole first." }
+    ],
+    warnings: ["Thin boards may crack", "The nail bends or goes off angle", "The item is heavy or load-bearing", "Concrete or gypsum board wall fixing is needed"],
+    cta: "If the item is load-bearing or you are unsure about the wall material, call a technician first.",
+    sourceSections: [
+      { title: "Preparation", type: "facts", items: ["Tools: hammer, nails, gloves, optional pliers", "Difficulty: Level 1", "Reference material cost: about KRW 1,000", "Note: force control matters more than hitting harder"] },
+      { title: "Step 1: Safety and positioning", image: "assets/word-part1/part1-02.jpg", body: "Wear gloves and place the nail at the target point. If you are worried about hitting your hand, hold the nail with pliers." },
+      { title: "Step 2: Start hammering", image: "assets/word-part1/part1-03.jpg", body: "Tap lightly first so the nail stands firm, then add force gradually. Keep the hammer face aligned with the nail head." },
+      { title: "Nails and screws", image: "assets/word-part1/part1-04.jpg", body: "Nails are used with hammers and have smooth shanks. Screws are driven with screwdrivers or drills and have threads for stronger fixing." },
+      { title: "Screw types", image: "assets/word-part1/part1-05.jpg", body: "Screws vary by head shape and material use. For ordinary home repair, beginners can start with common sizes." },
+      { title: "Fixing into concrete walls", image: "assets/word-part1/part1-06.jpg", body: "Do not force nails directly into concrete. Drill a hole first, insert a plastic anchor, then drive in a screw." },
+      { title: "Drill bits and wall material", image: "assets/word-part1/part1-07.jpg", body: "Drill bits differ for wood, concrete, and steel. For concrete walls, use a concrete bit and keep the drill perpendicular to the wall." },
+      { title: "Depth marking", image: "assets/word-part1/part1-09.jpg", body: "The hole depth should match the anchor length. Mark the drill bit with tape so you know when to stop." }
+    ]
+  },
   washer: {
     title: "Washer Not Draining",
     category: "Appliance",
@@ -748,7 +838,7 @@ function initHome() {
 function initGuides() {
   const guideRoot = document.querySelector("[data-guide-root]");
   if (!guideRoot) return;
-  const topic = RM.qs("topic") || "washer";
+  const topic = RM.qs("topic") || "part1";
   const guide = RM.guides[topic] || RM.guides.washer;
 
   document.querySelectorAll("[data-topic-tab]").forEach((tab) => {
@@ -760,7 +850,7 @@ function initGuides() {
   });
 
   guideRoot.innerHTML = `
-    <div class="grid-2">
+    <div class="grid-2 guide-top-grid">
       <article class="card">
         <p class="eyebrow">${guide.category} / ${guide.risk}</p>
         <h1>${guide.title}</h1>
@@ -770,7 +860,7 @@ function initGuides() {
       </article>
       <article class="card guide-visual-card">
         <h3>${ui("repairDiagram")}</h3>
-        <div class="repair-illustration ${topic}">
+        ${guide.heroImage ? `<img class="guide-photo" src="${guide.heroImage}" alt="${guide.title}">` : `<div class="repair-illustration ${topic}">
           <span class="repair-device"></span>
           <span class="repair-marker m1">1</span>
           <span class="repair-marker m2">2</span>
@@ -778,7 +868,7 @@ function initGuides() {
           <span class="repair-callout c1">${guide.steps[0].title}</span>
           <span class="repair-callout c2">${guide.steps[1].title}</span>
           <span class="repair-callout c3">${guide.steps[2].title}</span>
-        </div>
+        </div>`}
         <div class="visual-caption">
           <strong>${guide.steps[0].title}</strong>
           <p class="muted">${guide.steps[0].body}</p>
@@ -788,6 +878,11 @@ function initGuides() {
     <div class="guide-steps">
       ${guide.steps.map((step) => `<div class="guide-step"><div><h3>${step.title}</h3><p>${step.body}</p><span>${step.tip}</span></div></div>`).join("")}
     </div>
+    ${guide.sourceSections ? `<div class="source-guide">
+      ${guide.sourceSections.map((section) => section.type === "facts"
+        ? `<article class="card source-section source-facts"><h3>${section.title}</h3><ul class="clean-list">${section.items.map((item) => `<li>${item}</li>`).join("")}</ul></article>`
+        : `<article class="card source-section"><img src="${section.image}" alt="${section.title}"><div><h3>${section.title}</h3><p class="muted">${section.body}</p></div></article>`).join("")}
+    </div>` : ""}
     <div class="grid-3 detail-grid">
       <article class="card">
         <h3>${ui("commonSymptoms")}</h3>
@@ -812,8 +907,8 @@ function initGuides() {
       <h3>${ui("nextStep")}</h3>
       <p class="muted">${guide.cta}</p>
       <div class="button-row">
-        <a class="btn teal" href="agent.html?topic=${topic}">${ui("openAgent")}</a>
-        <a class="btn secondary" href="call.html?topic=${topic}">${ui("callRepair")}</a>
+        <a class="btn brick" href="call.html?topic=${topic}">${ui("callRepair")}</a>
+        <a class="btn secondary" href="agent.html?topic=${topic}">${ui("openAgent")}</a>
       </div>
     </div>
   `;
