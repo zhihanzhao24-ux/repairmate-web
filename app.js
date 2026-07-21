@@ -541,17 +541,72 @@ RM_LANGUAGE.zh.guides = {
       {
         title: "在混凝土牆上固定",
         image: "assets/word-part1/part1-06.jpg",
-        body: "混凝土牆不建議直接用錘子硬釘。更穩妥的方法是先用電鑽打孔，塞入塑料膨脹管，再拧入螺絲釘。"
+        body: "混凝土牆不建議直接用錘子硬釘。更穩妥的方法是先用電鑽打孔，塞入塑料膨脹管，再擰入螺絲釘。"
       },
       {
         title: "鑽頭與牆面",
-        image: "assets/word-part1/part1-07.jpg",
-        body: "鑽頭分木材用、混凝土用、鋼材用。混凝土牆需要配合混凝土鑽頭，並讓鑽頭與牆面保持垂直。"
+        image: "assets/word-part1/part1-08.jpg",
+        body: "鑽頭分木材用、混凝土用、鋼材用。混凝土牆需要配合混凝土鑽頭，鑽頭直徑應小於稍後使用的膨脹管。"
       },
       {
-        title: "深度標記",
+        title: "Step 1：安裝鑽頭",
         image: "assets/word-part1/part1-09.jpg",
-        body: "打孔深度應與膨脹管長度一致。可以先用膠帶在鑽頭上標記膨脹管長度，鑽到標記位置即可停止。"
+        body: "把夾頭鑰匙插入夾頭插孔，逆時針打開夾頭；插入大小合適的鑽頭後，再順時針鎖緊。"
+      },
+      {
+        title: "鎖緊鑽頭",
+        image: "assets/word-part1/part1-10.jpg",
+        body: "確認鑽頭位於夾頭中央並牢牢咬合。開始前先檢查鑽頭沒有歪斜或鬆動。"
+      },
+      {
+        title: "選擇錘擊模式",
+        image: "assets/word-part1/part1-11.jpg",
+        body: "在混凝土牆打孔時，把電鑽調到錘子圖標的錘擊模式；一般旋入螺絲時則使用螺絲刀旋轉模式。"
+      },
+      {
+        title: "Step 2：垂直打孔",
+        image: "assets/word-part1/part1-12.jpg",
+        body: "雙手握住電鑽，讓鑽頭與牆面保持垂直，再從肩部穩定發力。打孔時會有粉塵，可在下方貼便利貼方便清理。"
+      },
+      {
+        title: "標記打孔深度",
+        image: "assets/word-part1/part1-13.jpg",
+        body: "孔深應與膨脹管長度一致。可先用膠帶在鑽頭上標記膨脹管長度，鑽到標記位置便停止。"
+      },
+      {
+        title: "Step 3：放入膨脹管",
+        image: "assets/word-part1/part1-14.jpg",
+        body: "把塑料膨脹管插入鑽好的孔，再用錘子輕敲至與牆面齊平。若膨脹管太長，可剪去露在牆外的多餘部分。"
+      },
+      {
+        title: "Step 4：擰入螺絲",
+        image: "assets/word-part1/part1-15.jpg",
+        body: "用螺絲刀或電動螺絲刀把螺絲擰進膨脹管。掛物時可保留少量螺絲頭；固定擱板時則需完全擰緊。"
+      },
+      {
+        title: "石膏板牆：使用專用膨脹管",
+        image: "assets/word-part1/part1-16.jpg",
+        body: "石膏板較軟，普通釘子容易脫落。用螺絲刀把石膏板專用膨脹管旋入牆面，避免電鑽力道過大令牆板破裂。"
+      },
+      {
+        title: "擰入石膏板螺絲",
+        image: "assets/word-part1/part1-17.jpg",
+        body: "把螺絲擰進專用膨脹管。螺絲完全到位後不要繼續空轉，以免已固定的膨脹管鬆動。"
+      },
+      {
+        title: "更牢固的飛機型膨脹管",
+        image: "assets/word-part1/part1-18.jpg",
+        body: "飛機型膨脹管尾端尖銳，可像釘子一樣用錘子敲進石膏板；預先打好小孔會更容易定位。"
+      },
+      {
+        title: "先取出內部螺絲",
+        image: "assets/word-part1/part1-19.jpg",
+        body: "膨脹管入牆後，用螺絲刀或電鑽逆時針旋轉，先把內部螺絲取出。"
+      },
+      {
+        title: "收緊並固定",
+        image: "assets/word-part1/part1-20.jpg",
+        body: "重新擰緊螺絲時，飛機型膨脹管會在石膏板背面自動彎曲並張開，形成更牢固的支撐。"
       }
     ]
   },
@@ -650,8 +705,19 @@ RM_LANGUAGE.en.guides = {
       { title: "Nails and screws", image: "assets/word-part1/part1-04.jpg", body: "Nails are used with hammers and have smooth shanks. Screws are driven with screwdrivers or drills and have threads for stronger fixing." },
       { title: "Screw types", image: "assets/word-part1/part1-05.jpg", body: "Screws vary by head shape and material use. For ordinary home repair, beginners can start with common sizes." },
       { title: "Fixing into concrete walls", image: "assets/word-part1/part1-06.jpg", body: "Do not force nails directly into concrete. Drill a hole first, insert a plastic anchor, then drive in a screw." },
-      { title: "Drill bits and wall material", image: "assets/word-part1/part1-07.jpg", body: "Drill bits differ for wood, concrete, and steel. For concrete walls, use a concrete bit and keep the drill perpendicular to the wall." },
-      { title: "Depth marking", image: "assets/word-part1/part1-09.jpg", body: "The hole depth should match the anchor length. Mark the drill bit with tape so you know when to stop." }
+      { title: "Drill bits and wall material", image: "assets/word-part1/part1-08.jpg", body: "Drill bits differ for wood, concrete, and steel. For concrete walls, use a concrete bit slightly smaller than the wall anchor." },
+      { title: "Step 1: Fit the drill bit", image: "assets/word-part1/part1-09.jpg", body: "Open the chuck counterclockwise with the chuck key, insert the correct bit, then tighten it clockwise." },
+      { title: "Secure the drill bit", image: "assets/word-part1/part1-10.jpg", body: "Center the bit in the chuck and lock it firmly. Check that it is straight and does not wobble." },
+      { title: "Select hammer mode", image: "assets/word-part1/part1-11.jpg", body: "Use the hammer-icon mode for concrete drilling and the regular driver mode when driving screws." },
+      { title: "Step 2: Drill perpendicular to the wall", image: "assets/word-part1/part1-12.jpg", body: "Hold the drill with both hands and keep the bit perpendicular to the wall. Place a sticky note below the hole to catch dust." },
+      { title: "Mark the drilling depth", image: "assets/word-part1/part1-13.jpg", body: "The hole depth should match the anchor length. Mark the bit with tape so you know when to stop." },
+      { title: "Step 3: Insert the wall anchor", image: "assets/word-part1/part1-14.jpg", body: "Insert the plastic anchor into the hole and tap it gently until it sits flush with the wall." },
+      { title: "Step 4: Drive the screw", image: "assets/word-part1/part1-15.jpg", body: "Drive the screw into the anchor. Leave the head slightly proud for hanging items, or tighten fully for a shelf." },
+      { title: "Gypsum board: use a dedicated anchor", image: "assets/word-part1/part1-16.jpg", body: "Ordinary nails pull out of gypsum board easily. Turn a dedicated anchor in by hand to avoid cracking the board with excessive drill force." },
+      { title: "Drive the gypsum-board screw", image: "assets/word-part1/part1-17.jpg", body: "Drive the screw into the anchor and stop once it is seated; continued spinning can loosen the anchor." },
+      { title: "Stronger toggle-style anchor", image: "assets/word-part1/part1-18.jpg", body: "Tap the pointed toggle-style anchor into the gypsum board. A small pilot hole can make positioning easier." },
+      { title: "Remove the inner screw", image: "assets/word-part1/part1-19.jpg", body: "Once the anchor is in the wall, turn counterclockwise to remove its inner screw." },
+      { title: "Tighten and secure", image: "assets/word-part1/part1-20.jpg", body: "As the screw is tightened again, the anchor bends open behind the board to create a stronger hold." }
     ]
   },
   washer: {
