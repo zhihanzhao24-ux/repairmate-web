@@ -792,6 +792,20 @@ h3 {
   margin-bottom: 8px;
 }
 
+.source-section .muted {
+  line-height: 1.8;
+}
+
+.source-tip {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-left: 4px solid var(--amber);
+  border-radius: 0 8px 8px 0;
+  background: #fff8e8;
+  color: #5d5136;
+  line-height: 1.65;
+}
+
 .source-facts {
   display: block;
 }
