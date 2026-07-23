@@ -313,7 +313,11 @@ h3 {
 }
 
 .guide-top-grid {
-  align-items: start;
+  align-items: stretch;
+}
+
+.guide-top-grid > .card {
+  height: 100%;
 }
 
 .profile-layout {
