@@ -499,7 +499,7 @@ const RM_LANGUAGE = {
 RM_LANGUAGE.zh.guides = {
   part1: {
     title: "用錘子釘釘子",
-    category: "Part 1",
+    category: "",
     risk: "基礎入門",
     image: "assets/word-part1/part1-01.jpg",
     heroImage: "assets/word-part1/part1-01.jpg",
@@ -745,7 +745,7 @@ RM_LANGUAGE.zh.guides = {
 RM_LANGUAGE.en.guides = {
   part1: {
     title: "Hammering a Nail",
-    category: "Part 1",
+    category: "",
     risk: "Beginner basics",
     image: "assets/word-part1/part1-01.jpg",
     heroImage: "assets/word-part1/part1-01.jpg",
@@ -1006,7 +1006,7 @@ function initGuides() {
   guideRoot.innerHTML = `
     <div class="grid-2 guide-top-grid">
       <article class="card">
-        <p class="eyebrow">${guide.category} / ${guide.risk}</p>
+        <p class="eyebrow">${[guide.category, guide.risk].filter(Boolean).join(" / ")}</p>
         <h1>${guide.title}</h1>
         <p class="lead">${guide.intro}</p>
         <h3 style="margin-top:18px">${ui("suggestedTools")}</h3>
