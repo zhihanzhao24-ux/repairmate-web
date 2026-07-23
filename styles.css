@@ -810,6 +810,10 @@ h3 {
   display: block;
 }
 
+.source-text {
+  display: block;
+}
+
 .clean-list {
   list-style: none;
   padding: 0;

@@ -147,6 +147,7 @@ const RM_LANGUAGE = {
       "空调滴水": "冷氣機滴水",
       "水龙头漏水": "水龍頭漏水",
       "插座无电": "插座無電",
+      "房屋风水": "房屋風水",
       "故障分类": "故障分類",
       "所有维修建议均以安全为先。注册电工、水务认证等合规要求可在正式版接入审核资料。": "所有維修建議均以安全為先。註冊電工、水務認證等合規要求可在正式版接入審核資料。",
       "AI + AR 实景解答": "AI + AR 實景解答",
@@ -345,6 +346,7 @@ const RM_LANGUAGE = {
       "空调滴水": "AC Water Dripping",
       "水龙头漏水": "Leaking Tap",
       "插座无电": "Socket Has No Power",
+      "房屋风水": "Home Feng Shui",
       "故障分类": "Issue categories",
       "所有维修建议均以安全为先。注册电工、水务认证等合规要求可在正式版接入审核资料。": "All repair guidance puts safety first. Registered electrician, plumbing certification, and other compliance checks can be added in the production version.",
       "AI + AR 实景解答": "AI + AR Scene Help",
@@ -615,6 +617,61 @@ RM_LANGUAGE.zh.guides = {
       }
     ]
   },
+  fengshui: {
+    title: "房屋風水入門",
+    category: "家居文化",
+    risk: "傳統文化參考",
+    image: "assets/fengshui-bagua.png",
+    heroImage: "assets/fengshui-bagua.png",
+    intro: "本頁根據《實用風水現用現查手冊》的住宅、方位、玄關與客廳內容整理。風水屬於傳統文化與民俗觀念，缺乏一致的科學驗證；可把其中重視採光、通風、整潔、動線和居住舒適度的部分，作為家居布置靈感。",
+    symptoms: ["想了解住宅八方位", "準備調整玄關與客廳", "希望改善採光、通風和動線", "需要一份不過度迷信的入門指南"],
+    tools: ["房屋平面圖", "手機指南針", "八卦方位圖", "紙筆或標記貼"],
+    steps: [
+      { title: "找出正北方向", body: "站在住宅較中央的位置，用手機指南針找出北方；遠離大型金屬、電器和磁性物品，並以戶型圖交叉確認。", tip: "指南針容易受環境干擾，結果只適合做大致方位參考。" },
+      { title: "把住宅分成八方", body: "以中心向外分成東、東南、南、西南、西、西北、北、東北八個方向，再對照方位圖標記房間與入口。", tip: "東為震、東南為巽、南為離、西南為坤、西為兌、西北為乾、北為坎、東北為艮。" },
+      { title: "查看入口與公共空間", body: "先觀察大門、玄關、客廳等日常使用頻率高的位置，重點檢查是否明亮、整潔、通風，主要通道是否順暢。", tip: "任何布置都不能阻擋逃生門、消防設備或日常通行。" },
+      { title: "先改善實際居住品質", body: "優先處理潮濕、漏水、眩光、噪音、霉菌、插座過載和家具不穩等實際問題，再考慮色彩、飾物與傳統方位偏好。", tip: "結構、電力、燃氣和滲水問題應交由合資格專業人員處理。" }
+    ],
+    warnings: ["用風水替代結構或電力安全檢查", "為遷就方位而堵塞門窗或逃生通道", "在潮濕、漏水或發霉時只擺放飾物", "因吉凶說法產生過度焦慮或高額消費"],
+    cta: "先用方位圖了解空間，再以採光、通風、整潔、舒適和安全作為實際調整標準。",
+    sourceSections: [
+      {
+        title: "八方位與八卦對照",
+        image: "assets/fengshui-bagua.png",
+        body: "書中採用後天八卦方位：乾對應西北、兌對應正西、離對應正南、震對應正東、巽對應東南、坎對應正北、艮對應東北、坤對應西南。傳統上會把房屋坐向與大門朝向相對理解，例如大門向西，住宅便稱為坐東向西。",
+        tip: "這套對照屬傳統術數框架，不等同於建築、測量或工程標準。"
+      },
+      {
+        title: "選擇住宅：先看環境品質",
+        type: "text",
+        body: "原書把住宅選擇與風勢、陽光、地勢及周邊環境連在一起。轉化為現代家居檢查時，可重點觀察自然採光是否充足、空氣能否流通、房屋是否過度潮濕、噪音和車流是否影響休息，以及出入口是否安全。強風直灌與完全不通風都可能降低舒適度。",
+        tip: "購屋或租屋仍應以樓宇檢驗、產權資料、消防要求、結構狀況和實際預算為準。"
+      },
+      {
+        title: "玄關：通透、適中、明亮、整潔",
+        type: "text",
+        body: "書中把玄關整理成四項原則：間隔宜通透、尺度宜適中、光線宜明亮、環境宜整潔。實際布置可採用淺色或透光材質，避免過高櫃體造成壓迫；鞋物與雜物集中收納，保持大門開啟順暢，無自然光時加入柔和照明。",
+        tip: "鞋櫃和裝飾物不可縮窄主要通道，也不要遮擋電箱、消防裝置或門鎖。"
+      },
+      {
+        title: "客廳：沙發、屏風與動線",
+        type: "text",
+        body: "原書建議沙發背後有穩定依靠，並避免與大門形成直接衝線。從空間設計角度看，靠牆或有矮櫃支撐通常更有安全感；入口直望休息區時，可用尺寸適中的屏風或矮櫃增加私密性，但不宜讓狹小客廳變得更擠迫。",
+        tip: "屏風應穩固、防傾倒並保留足夠通行寬度；有幼童或長者的家庭尤其要避免尖角和絆倒風險。"
+      },
+      {
+        title: "採光與色彩",
+        type: "text",
+        body: "傳統說法重視「廳明室暗」，強調客廳明亮、臥室柔和。實際應用時，可讓客廳獲得均勻照明，避免單一強光造成眩光；空間偏暗時使用較淺的牆面與家具色彩，南向或西曬房間則配合遮陽、通風與較清爽的色調。",
+        tip: "照明首先要滿足閱讀、行走和用電安全，不必拘泥於特定燈具形狀或數字。"
+      },
+      {
+        title: "使用這份指南的方式",
+        type: "facts",
+        items: ["把風水視為傳統文化與空間整理參考", "先解決漏水、發霉、電力、燃氣和結構問題", "以採光、通風、動線、私密性和舒適度評估布置", "重大裝修先諮詢設計、工程或合資格維修人員", "不要因絕對吉凶說法產生恐慌或不必要消費"]
+      }
+    ]
+  },
   washer: {
     title: "洗衣機不排水",
     category: "家電",
@@ -723,6 +780,32 @@ RM_LANGUAGE.en.guides = {
       { title: "Stronger toggle-style anchor", image: "assets/word-part1/part1-18.jpg", body: "Tap the pointed toggle-style anchor into the gypsum board. A small pilot hole can make positioning easier." },
       { title: "Remove the inner screw", image: "assets/word-part1/part1-19.jpg", body: "Once the anchor is in the wall, turn counterclockwise to remove its inner screw." },
       { title: "Tighten and secure", image: "assets/word-part1/part1-20.jpg", body: "As the screw is tightened again, the anchor bends open behind the board to create a stronger hold." }
+    ]
+  },
+  fengshui: {
+    title: "Home Feng Shui Basics",
+    category: "Home Culture",
+    risk: "Traditional reference",
+    image: "assets/fengshui-bagua.png",
+    heroImage: "assets/fengshui-bagua.png",
+    intro: "This page adapts the book's sections on homes, directions, entryways, and living rooms. Feng shui is a traditional cultural practice without consistent scientific validation. Its emphasis on light, airflow, tidiness, circulation, and comfort can still be used as interior-layout inspiration.",
+    symptoms: ["Learn the eight home directions", "Rearrange the entryway or living room", "Improve light, airflow, and circulation", "Use a balanced, non-superstitious guide"],
+    tools: ["Floor plan", "Phone compass", "Bagua direction chart", "Notes or markers"],
+    steps: [
+      { title: "Find north", body: "Stand near the center of the home and use a phone compass to identify north. Move away from large metal objects and electrical appliances.", tip: "Compass readings can be distorted indoors, so treat them as approximate." },
+      { title: "Map the eight directions", body: "Divide the plan into east, southeast, south, southwest, west, northwest, north, and northeast, then mark rooms and entrances.", tip: "East is Zhen, southeast Xun, south Li, southwest Kun, west Dui, northwest Qian, north Kan, and northeast Gen." },
+      { title: "Review entrances and shared spaces", body: "Start with the front door, entryway, and living room. Check brightness, tidiness, ventilation, privacy, and whether main walking routes remain clear.", tip: "Never block exits, fire equipment, doors, or daily circulation for a directional preference." },
+      { title: "Improve real living conditions first", body: "Resolve dampness, leaks, glare, noise, mold, overloaded sockets, and unstable furniture before considering colors, ornaments, or traditional directional preferences.", tip: "Structural, electrical, gas, and water-ingress issues require qualified professionals." }
+    ],
+    warnings: ["Using feng shui instead of structural or electrical checks", "Blocking windows, doors, or escape routes", "Using ornaments while ignoring dampness, leaks, or mold", "Anxiety or excessive spending caused by absolute fortune claims"],
+    cta: "Use the direction chart to understand the space, then prioritize light, airflow, tidiness, comfort, and safety.",
+    sourceSections: [
+      { title: "Eight directions and bagua", image: "assets/fengshui-bagua.png", body: "The book uses the later-heaven bagua: Qian northwest, Dui west, Li south, Zhen east, Xun southeast, Kan north, Gen northeast, and Kun southwest. Traditional practice describes a home's facing direction as opposite its sitting direction.", tip: "This is a traditional symbolic system, not an architectural, surveying, or engineering standard." },
+      { title: "Choosing a home: start with environmental quality", type: "text", body: "The source connects housing choices with wind, sunlight, terrain, and surroundings. In practical terms, check daylight, airflow, dampness, traffic noise, privacy, and entrance safety. Both strong drafts and stagnant air can reduce comfort.", tip: "Purchase or rental decisions should still rely on inspections, legal records, fire requirements, structural condition, and budget." },
+      { title: "Entryway: open, proportionate, bright, and tidy", type: "text", body: "The book summarizes entryway design with four ideas: visual openness, suitable scale, good lighting, and tidiness. Use light or translucent materials, avoid oppressive full-height barriers, organize shoes and clutter, and add soft lighting when daylight is limited.", tip: "Do not narrow the main route or cover the electrical panel, fire equipment, locks, or door hardware." },
+      { title: "Living room: sofa, screen, and circulation", type: "text", body: "The book favors a stable backing behind the sofa and avoiding a direct line with the entrance. In spatial-design terms, a wall or low cabinet can provide security, while a modest screen can improve privacy without crowding a small room.", tip: "Screens must be stable and leave sufficient passage width; avoid sharp corners and trip hazards." },
+      { title: "Light and color", type: "text", body: "Traditional guidance favors a brighter living room and softer bedroom light. In practice, use even task lighting, reduce glare, apply lighter colors in dark rooms, and manage solar heat in south- or west-facing rooms with shade and ventilation.", tip: "Lighting should first meet reading, movement, and electrical-safety needs; specific shapes or lucky numbers are optional cultural preferences." },
+      { title: "How to use this guide", type: "facts", items: ["Treat feng shui as cultural and space-planning reference", "Fix leaks, mold, electrical, gas, and structural issues first", "Judge layouts by light, airflow, circulation, privacy, and comfort", "Consult designers, engineers, or qualified technicians for major work", "Avoid fear or unnecessary spending based on absolute fortune claims"] }
     ]
   },
   washer: {
@@ -952,7 +1035,9 @@ function initGuides() {
     ${guide.sourceSections ? `<div class="source-guide">
       ${guide.sourceSections.map((section) => section.type === "facts"
         ? `<article class="card source-section source-facts"><h3>${section.title}</h3><ul class="clean-list">${section.items.map((item) => `<li>${item}</li>`).join("")}</ul></article>`
-        : `<article class="card source-section"><img src="${section.image}" alt="${section.title}"><div><h3>${section.title}</h3><p class="muted">${section.body}</p>${section.tip ? `<p class="source-tip"><strong>TIP：</strong>${section.tip}</p>` : ""}</div></article>`).join("")}
+        : section.type === "text"
+          ? `<article class="card source-section source-text"><div><h3>${section.title}</h3><p class="muted">${section.body}</p>${section.tip ? `<p class="source-tip"><strong>TIP：</strong>${section.tip}</p>` : ""}</div></article>`
+          : `<article class="card source-section"><img src="${section.image}" alt="${section.title}"><div><h3>${section.title}</h3><p class="muted">${section.body}</p>${section.tip ? `<p class="source-tip"><strong>TIP：</strong>${section.tip}</p>` : ""}</div></article>`).join("")}
     </div>` : ""}
     <div class="grid-3 detail-grid">
       <article class="card">
