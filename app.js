@@ -1055,7 +1055,7 @@ function initGuides() {
         <p class="muted">${ui("visualFocusBody")}</p>
       </article>
       <article class="card warning-card">
-        <h3>${ui("callHuman")}</h3>
+        <h3>${ui("openAgent")}</h3>
         <ul class="clean-list">${guide.warnings.map((item) => `<li>${item}</li>`).join("")}</ul>
       </article>
     </div>
@@ -1064,7 +1064,7 @@ function initGuides() {
       <p class="muted">${guide.cta}</p>
       <div class="button-row">
         <a class="btn brick" href="call.html?topic=${topic}">${ui("callRepair")}</a>
-        <a class="btn secondary" href="agent.html?topic=${topic}">${ui("openAgent")}</a>
+        <a class="btn secondary" href="agent.html?topic=${topic}">${ui("callHuman")}</a>
       </div>
     </div>
   `;
